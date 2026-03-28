@@ -1,0 +1,915 @@
+{
+  "acheron": {
+    "name": "Acheron",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1308.png",
+    "desc": "Lightning Nihility Main DPS. Void-based mechanics. 🌌⚡",
+    "build": {
+      "lightcone": "Along the Passing Shore / Incessant Rain",
+      "relic": "Pioneer Diver / Izumo Gensei",
+      "stats": "CRIT RATE / CRIT DMG / ATK%",
+      "tips": "Fokus ke debuff musuh buat kumpulin 9 stack Slashed Dream. 😈"
+    }
+  },
+  "aglaea": {
+    "name": "Aglaea",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1402.png",
+    "desc": "Lightning Remembrance Main DPS. Weaver of Gold. ⚡📖",
+    "build": {
+      "lightcone": "Time Woven Into Gold (Signature)",
+      "relic": "Hero of Triumphant Song",
+      "stats": "CRIT DMG / SPD / Lightning DMG",
+      "tips": "Manfaatin 'Garmentmaker' buat serangan extra. ✨"
+    }
+  },
+  "anaxa": {
+    "name": "Anaxa",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1411.png",
+    "desc": "Wind Erudition character, Sage of Epiphany. AoE specialist. 🌪️🖋️",
+    "build": {
+      "lightcone": "Signature Erudition LC",
+      "relic": "Eagle of Twilight Line",
+      "stats": "CRIT Rate / ATK% / WIND DMG",
+      "tips": "Apply multiple weaknesses ke musuh biar damage Ultimate meledak! 🌪️"
+    }
+  },
+  "archer": {
+    "name": "Archer",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1405.png",
+    "desc": "Fate/Stay Night Crossover. Quantum Hunt Main DPS. 🏹💎",
+    "build": {
+      "lightcone": "The Hell Where Ideals Burn",
+      "relic": "Genius of Brilliant Stars",
+      "stats": "ATK% / CRIT Rate / CRIT DMG",
+      "tips": "Spam Skill tanpa abisin turn. Cocok bareng Sparkle! ⚔️"
+    }
+  },
+  "argenti": {
+    "name": "Argenti",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1302.png",
+    "desc": "Knight of Beauty. Physical Erudition AoE king. 🌹🛡️",
+    "build": {
+      "lightcone": "An Instant Before A Gaze",
+      "relic": "Champion of Streetwise Boxing",
+      "stats": "CRIT DMG / ATK% / Physical DMG",
+      "tips": "Pake Ultimate di 180 Energy buat damage maksimal! 🌹"
+    }
+  },
+  "arlan": {
+    "name": "Arlan",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1008.png",
+    "desc": "Lightning Destruction. HP-consuming warrior. ⚡🛡️",
+    "build": {
+      "lightcone": "On the Fall of an Aeon / A Secret Vow",
+      "relic": "Longevous Disciple",
+      "stats": "CRIT RATE / ATK / Lightning DMG",
+      "tips": "Makin sekarat darahnya, makin sakit damage-nya! 😅"
+    }
+  },
+  "ashveil": {
+    "name": "Ashveil",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1408.png",
+    "desc": "Lightning Hunt sub-DPS. Follow-up specialist. ⚡🦅",
+    "build": {
+      "lightcone": "Signature Hunt LC",
+      "relic": "The Ashblazing Grand Duke",
+      "stats": "CRIT DMG / ATK% / SPD",
+      "tips": "Pake 'Bait' buat nurunin DEF musuh. Synergi bareng Feixiao! 🦅"
+    }
+  },
+  "asta": {
+    "name": "Asta",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1009.png",
+    "desc": "Fire Harmony SPD buffer. 🔥🛰️",
+    "build": {
+      "lightcone": "Dance! Dance! Dance!",
+      "relic": "Messenger Traversing Hackerspace",
+      "stats": "SPD (145+) / ERR / HP%",
+      "tips": "Ultimate-nya naikin SPD seluruh team, wajib buat team kenceng! ⚡"
+    }
+  },
+  "aventurine": {
+    "name": "Aventurine",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1304.png",
+    "desc": "Imaginary Preservation sustain & sub-DPS. 🎲🛡️",
+    "build": {
+      "lightcone": "Inherently Unjust Destiny",
+      "relic": "Knight of Purity Palace",
+      "stats": "DEF% (Min. 4000) / CRIT DMG",
+      "tips": "Shield-nya tebel dan bisa auto-refresh lewat Follow-up attack! 🎰"
+    }
+  },
+  "bailu": {
+    "name": "Bailu",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1211.png",
+    "desc": "Lightning Abundance healer. Revive specialist. ⚡🐉",
+    "build": {
+      "lightcone": "Time Waits for No One",
+      "relic": "Passerby of Wandering Cloud",
+      "stats": "HP% / Outgoing Healing / SPD",
+      "tips": "Bisa revive temen mati sekali per battle! 💊"
+    }
+  },
+  "blackswan": {
+    "name": "Black Swan",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1307.png",
+    "desc": "Wind Nihility DoT specialist. 🌬️🃏",
+    "build": {
+      "lightcone": "Reforged Remembrance",
+      "relic": "Prisoner in Deep Confinement",
+      "stats": "EHR (120%) / ATK% / SPD",
+      "tips": "Wajib bareng Kafka buat pecahin stack Arcana maksimal! 💜"
+    }
+  },
+  "blade": {
+    "name": "Blade",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1205.png",
+    "desc": "Wind Destruction HP-scaling DPS. 🌬️🗡️",
+    "build": {
+      "lightcone": "The Unreachable Side",
+      "relic": "Longevous Disciple",
+      "stats": "HP% / CRIT RATE / CRIT DMG",
+      "tips": "Damage-nya dihitung dari darah yang ilang. Jangan pake shielder! 🩸"
+    }
+  },
+  "boothill": {
+    "name": "Boothill",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1315.png",
+    "desc": "Physical Hunt Break DPS cowboy. 🤠🔩",
+    "build": {
+      "lightcone": "Sailing Towards A Second Life",
+      "relic": "Iron Cavalry Against Scourge",
+      "stats": "BREAK EFFECT (250%+) / SPD",
+      "tips": "Flesh and metal! Mainkan mode Standoff lalu hancurin weakness! 💥"
+    }
+  },
+  "bronya": {
+    "name": "Bronya",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1101.png",
+    "desc": "Wind Harmony turn accelerator. 🌬️❄️",
+    "build": {
+      "lightcone": "But the Battle Isn't Over",
+      "relic": "Messenger Traversing Hackerspace",
+      "stats": "CRIT DMG / SPD / HP%",
+      "tips": "Pastikan SPD Bronya tepat di bawah SPD DPS utama (Speed Tuning). 👸"
+    }
+  },
+  "castorice": {
+    "name": "Castorice",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1407.png",
+    "desc": "Quantum Remembrance DPS. Commands 'Netherwing'. 💀💎",
+    "build": {
+      "lightcone": "Signature Remembrance LC",
+      "relic": "Poet of Mourning Collapse",
+      "stats": "CRIT DMG / HP% / QUANTUM DMG",
+      "tips": "Dia 'memanen' HP temen buat buff. Bawa healer kuat! 💉"
+    }
+  },
+  "cerydra": {
+    "name": "Cerydra",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1412.png",
+    "desc": "Wind Harmony support. Military Merit buffer. 🌬️📜",
+    "build": {
+      "lightcone": "Signature Harmony LC",
+      "relic": "Messenger Traversing Hackerspace",
+      "stats": "SPD / HP% / ERR",
+      "tips": "Buffer Archer atau Phainon. Naikin stack Peerage! 🎖️"
+    }
+  },
+  "cipher": {
+    "name": "Cipher",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1406.png",
+    "desc": "Quantum Nihility support. True Damage specialist. 💎📊",
+    "build": {
+      "lightcone": "Signature Nihility LC",
+      "relic": "Sacerdos' Relived Ordeal",
+      "stats": "SPD (170+) / EHR",
+      "tips": "Records damage temen dan balikin sebagai True Damage! 📈"
+    }
+  },
+  "clara": {
+    "name": "Clara",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1104.png",
+    "desc": "Physical Destruction counter-attacker. 🤖👧",
+    "build": {
+      "lightcone": "Something Irreplaceable",
+      "relic": "Champion of Streetwise Boxing",
+      "stats": "ATK% / CRIT RATE",
+      "tips": "Wajib dipukul musuh biar Svarog bales! 👊"
+    }
+  },
+  "cyrene": {
+    "name": "Cyrene",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1414.png",
+    "desc": "Ice Remembrance support. Zone-based buffing. ❄️📖",
+    "build": {
+      "lightcone": "Signature Remembrance LC",
+      "relic": "Messenger Traversing Hackerspace",
+      "stats": "SPD (180+) / HP%",
+      "tips": "Kasih True Damage Zone ke seluruh team lewat Ultimate! 🚀"
+    }
+  },
+  "danheng": {
+    "name": "Dan Heng",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1002.png",
+    "desc": "Wind Hunt single-target DPS. 🌬️🐉",
+    "build": {
+      "lightcone": "In the Night",
+      "relic": "Eagle of Twilight Line",
+      "stats": "CRIT RATE / CRIT DMG / ATK%",
+      "tips": "Nembus Wind RES musuh kalo dia di-buff temen! 🌪️"
+    }
+  },
+  "imbibitorlunae": {
+    "name": "Dan Heng • Imbibitor Lunae",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1213.png",
+    "desc": "Imaginary Destruction heavy DPS. 🐲🌊",
+    "build": {
+      "lightcone": "Brighter Than the Sun",
+      "relic": "Wastelander / Rutilant Arena",
+      "stats": "CRIT RATE (70%+) / ATK%",
+      "tips": "Skill Point hater! Bawa Sparkle buat regen SP. 🐲"
+    }
+  },
+  "permansorterrae": {
+    "name": "Dan Heng • Permansor Terrae",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1002.png",
+    "desc": "Physical Preservation. Shielding & Dispel specialist. 🛡️🐉",
+    "build": {
+      "lightcone": "Signature Preservation LC",
+      "relic": "Self-Enshrouded Recluse",
+      "stats": "SPD / ATK% / ERR",
+      "tips": "Souldragon kasih shield passive tiap temen gerak! 🛡️"
+    }
+  },
+  "drratio": {
+    "name": "Dr. Ratio",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1305.png",
+    "desc": "Imaginary Hunt Follow-up DPS. 🍎📚",
+    "build": {
+      "lightcone": "Baptism of Pure Thought",
+      "relic": "Pioneer Diver / Inert Salsotto",
+      "stats": "CRIT DMG / CRIT RATE",
+      "tips": "Peluang Follow-up naik tiap ada debuff di musuh! 🍎"
+    }
+  },
+  "evernight": {
+    "name": "Evernight",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1413.png",
+    "desc": "Ice Remembrance DPS. 'Dark March'. ❄️🌚",
+    "build": {
+      "lightcone": "Signature Remembrance LC",
+      "relic": "World Remaking Deliverer",
+      "stats": "HP% / CRIT DMG",
+      "tips": "Kumpulin stack Memoria bareng Evey buat bantai musuh! 🌚"
+    }
+  },
+  "feixiao": {
+    "name": "Feixiao",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1220.png",
+    "desc": "Wind Hunt Follow-up hybrid. 🌬️🦅",
+    "build": {
+      "lightcone": "I Venture Forth to Hunt",
+      "relic": "The Wind-Soaring Valorous",
+      "stats": "CRIT RATE / ATK% / SPD",
+      "tips": "Ultimate butuh Stack dari serangan temen-temen! 🦅"
+    }
+  },
+  "firefly": {
+    "name": "Firefly",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1310.png",
+    "desc": "Fire Destruction Super Break DPS. 🔥🤖",
+    "build": {
+      "lightcone": "Where Dreams Come Home",
+      "relic": "Iron Cavalry / Forge of Lantern",
+      "stats": "BREAK EFFECT (360%+) / SPD (150+)",
+      "tips": "Wajib bawa Harmony Trailblazer buat Super Break! 🔥"
+    }
+  },
+  "fuxuan": {
+    "name": "Fu Xuan",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1208.png",
+    "desc": "Quantum Preservation tank/buffer. 🔮🛡️",
+    "build": {
+      "lightcone": "She Already Shut Her Eyes",
+      "relic": "Guard of Wuthering Snow",
+      "stats": "HP% / SPD / DEF%",
+      "tips": "Tangis damage team ke dirinya sendiri. Matrix of Prescience! 🔮"
+    }
+  },
+  "fugue": {
+    "name": "Fugue",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1224.png",
+    "desc": "Fire Nihility DoT/Break hybrid. 🔥🦊",
+    "build": {
+      "lightcone": "Signature Nihility LC",
+      "relic": "Prisoner in Deep Confinement",
+      "stats": "EHR / ATK% / SPD",
+      "tips": "Support DoT dan Break fleksibel. Return of Tingyun! 🦊"
+    }
+  },
+  "gallagher": {
+    "name": "Gallagher",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1301.png",
+    "desc": "Fire Abundance sustain. 🔥🍹",
+    "build": {
+      "lightcone": "What Is Real?",
+      "relic": "Thief of Shooting Meteor",
+      "stats": "BREAK EFFECT / SPD / HP%",
+      "tips": "Ultimate lalu Basic instan buat burst heal! 🍹"
+    }
+  },
+  "gepard": {
+    "name": "Gepard",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1103.png",
+    "desc": "Ice Preservation shielder. ❄️🛡️",
+    "build": {
+      "lightcone": "Moment of Victory",
+      "relic": "Knight of Purity Palace",
+      "stats": "DEF% / SPD / ERR",
+      "tips": "Spam Ultimate buat shield tebel satu team! ❄️"
+    }
+  },
+  "guinaifen": {
+    "name": "Guinaifen",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1210.png",
+    "desc": "Fire Nihility Burn specialist. 🔥🧨",
+    "build": {
+      "lightcone": "Patience Is All You Need",
+      "relic": "Prisoner in Deep Confinement",
+      "stats": "EHR / ATK% / SPD",
+      "tips": "Debuff 'Firekiss' biar damage masuk makin gede! 🧨"
+    }
+  },
+  "hanya": {
+    "name": "Hanya",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1215.png",
+    "desc": "Physical Harmony SP restorer. 📜🖌️",
+    "build": {
+      "lightcone": "Memories of the Past",
+      "relic": "Messenger Traversing Hackerspace",
+      "stats": "SPD (160+) / ERR",
+      "tips": "'Burden' balikin SP tiap temen mukul 2 kali. 🖌️"
+    }
+  },
+  "herta": {
+    "name": "Herta",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1013.png",
+    "desc": "Ice Erudition Follow-up expert. ❄️👗",
+    "build": {
+      "lightcone": "The Day The Cosmos Fell",
+      "relic": "Hunter of Glacial Forest",
+      "stats": "CRIT RATE / ATK%",
+      "tips": "Kurukuru~ Rajanya Pure Fiction! 🌪️"
+    }
+  },
+  "theherta": {
+    "name": "The Herta",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1401.png",
+    "desc": "True 5-star Herta. Ice Erudition top-tier. ❄️💎",
+    "build": {
+      "lightcone": "True Genius Signature LC",
+      "relic": "Scholar Lost in Erudition",
+      "stats": "CRIT RATE / CRIT DMG",
+      "tips": "Interpretation stack naikin damage AoE gila! 💎"
+    }
+  },
+  "himeko": {
+    "name": "Himeko",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1003.png",
+    "desc": "Fire Erudition break-punisher. 🔥🚂",
+    "build": {
+      "lightcone": "Before Dawn",
+      "relic": "The Ashblazing Grand Duke",
+      "stats": "CRIT RATE / ATK% / FIRE DMG",
+      "tips": "Wajib bawa Ruan Mei biar musuh cepet Break! 🔥"
+    }
+  },
+  "hook": {
+    "name": "Hook",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1109.png",
+    "desc": "Fire Destruction single-target. 🔥🧸",
+    "build": {
+      "lightcone": "The Moles Welcome You",
+      "relic": "Firesmith of Lava-Forging",
+      "stats": "ATK% / CRIT RATE",
+      "tips": "Ultimate perkuat Skill berikutnya. 🧸"
+    }
+  },
+  "huohuo": {
+    "name": "Huohuo",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1217.png",
+    "desc": "Wind Abundance energy-regen healer. 🌬️👻",
+    "build": {
+      "lightcone": "Night of Fright",
+      "relic": "Messenger Traversing Hackerspace",
+      "stats": "HP% / SPD / ERR",
+      "tips": "Dispel satu turn bisa bersihin banyak debuff! 👻"
+    }
+  },
+  "hyacine": {
+    "name": "Hyacine",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1409.png",
+    "desc": "Wind Remembrance Healer/DPS. 🌬️🌸",
+    "build": {
+      "lightcone": "Signature Remembrance LC",
+      "relic": "Warrior Goddess of Sun",
+      "stats": "SPD (200+) / HP%",
+      "tips": "Build Speed gila biar Little Ica sering spawn! 🌸"
+    }
+  },
+  "hysilens": {
+    "name": "Hysilens",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1410.png",
+    "desc": "Physical Nihility DoT support. 🩸🌑",
+    "build": {
+      "lightcone": "Why Does The Ocean Sing",
+      "relic": "Prisoner in Deep Confinement",
+      "stats": "EHR (120%+) / SPD",
+      "tips": "Zone nurunin DEF musuh dan nambah DoT team! 🌑"
+    }
+  },
+  "jade": {
+    "name": "Jade",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1308.png",
+    "desc": "Quantum Erudition sub-DPS. 💎💼",
+    "build": {
+      "lightcone": "Yet Hope Is Priceless",
+      "relic": "The Ashblazing Grand Duke",
+      "stats": "CRIT DMG / ATK%",
+      "tips": "'Debt Collector' ke temen AoE buat stack cepet! 💎"
+    }
+  },
+  "jiaoqiu": {
+    "name": "jiaoqiu",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1218.png",
+    "desc": "Fire Nihility debuffer strategist. 🔥🦊",
+    "build": {
+      "lightcone": "Those Many Springs",
+      "relic": "Pioneer Diver",
+      "stats": "EHR (140%+) / SPD (160+)",
+      "tips": "Best support Acheron. Vulnerability tiap turn! 🔥"
+    }
+  },
+  "jingyuan": {
+    "name": "Jing Yuan",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1204.png",
+    "desc": "Lightning Erudition summon-DPS. ⚡🦁",
+    "build": {
+      "lightcone": "Before Dawn",
+      "relic": "The Ashblazing Grand Duke",
+      "stats": "CRIT RATE / ATK% / SPD",
+      "tips": "Jaga stack Lighting Lord minimal 7-10! 🦁"
+    }
+  },
+  "jingliu": {
+    "name": "Jingliu",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1212.png",
+    "desc": "Ice Destruction burst DPS queen. ❄️🌙",
+    "build": {
+      "lightcone": "I Shall Be My Own Sword",
+      "relic": "Hunter of Glacial Forest",
+      "stats": "CRIT DMG / SPD / ATK%",
+      "tips": "Mode trans-nya dapet bonus 50% CRIT Rate! 🌙"
+    }
+  },
+  "kafka": {
+    "name": "Kafka",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1005.png",
+    "desc": "Stellaron Hunter. Lightning Nihility DoT. ⚡🎻",
+    "build": {
+      "lightcone": "Patience Is All You Need",
+      "relic": "Prisoner in Deep Confinement",
+      "stats": "ATK% / SPD (160+)",
+      "tips": "Jantung team DoT. Trigger DoT temen pake Skill! 🎻"
+    }
+  },
+  "lingsha": {
+    "name": "Lingsha",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1222.png",
+    "desc": "Fire Abundance break-sustain. 🔥🐰",
+    "build": {
+      "lightcone": "Scent Alone Stays True",
+      "relic": "Iron Cavalry Against Scourge",
+      "stats": "BREAK EFFECT (200%+) / SPD",
+      "tips": "Summon kelinci buat heal dan damage break! 🐰"
+    }
+  },
+  "luka": {
+    "name": "Luka",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1106.png",
+    "desc": "Physical Nihility bleed specialist. 🥊🔩",
+    "build": {
+      "lightcone": "Good Night and Sleep Well",
+      "relic": "Prisoner in Deep Confinement",
+      "stats": "ATK% / EHR / SPD",
+      "tips": "Bagus lawan boss Physical-weak! 🥊"
+    }
+  },
+  "luocha": {
+    "name": "Luocha",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1203.png",
+    "desc": "Imaginary Abundance auto-healer. 🌼⚰️",
+    "build": {
+      "lightcone": "Echoes of the Coffin",
+      "relic": "Passerby of Wandering Cloud",
+      "stats": "ATK% / SPD / ERR",
+      "tips": "Heal reactive pas temen sekarat! 🌼"
+    }
+  },
+  "lynx": {
+    "name": "Lynx",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1112.png",
+    "desc": "Quantum Abundance support-healer. 💎🏕️",
+    "build": {
+      "lightcone": "Post-Op Conversation",
+      "relic": "Passerby of Wandering Cloud",
+      "stats": "HP% / SPD / ERR",
+      "tips": "Naikin Aggro Clara atau Blade lewat Skill! 🏕️"
+    }
+  },
+  "march7": {
+    "name": "March 7th",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1001.png",
+    "desc": "Ice Preservation shielder & freezer. ❄️📸",
+    "build": {
+      "lightcone": "Moment of Victory",
+      "relic": "Knight of Purity Palace",
+      "stats": "DEF% / EHR / SPD",
+      "tips": "Freeze musuh pake Ultimate-nya! 📸"
+    }
+  },
+  "marchhunt": {
+    "name": "March 7th (The Hunt)",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1001.png",
+    "desc": "Imaginary Hunt multi-attack. 🐉⚔️",
+    "build": {
+      "lightcone": "Cruising in the Stellar Sea",
+      "relic": "Musketeer of Wild Wheat",
+      "stats": "ATK% / CRIT Rate / SPD",
+      "tips": "Point master ke Topaz atau Feixiao! 🐉"
+    }
+  },
+  "misha": {
+    "name": "Misha",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1312.png",
+    "desc": "Ice Destruction stall-healer. ❄️🛎️",
+    "build": {
+      "lightcone": "On the Fall of an Aeon",
+      "relic": "Hunter of Glacial Forest",
+      "stats": "CRIT RATE / ATK%",
+      "tips": "Ultimate makin sakit kalo team pake SP! 🛎️"
+    }
+  },
+  "moze": {
+    "name": "Moze",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1223.png",
+    "desc": "Lightning Hunt sub-DPS follow-up. ⚡🦅",
+    "build": {
+      "lightcone": "Baptism of Pure Thought",
+      "relic": "The Ashblazing Grand Duke",
+      "stats": "CRIT RATE / CRIT DMG",
+      "tips": "'Prey' musuh trus menghilang dari turn bar! 🦅"
+    }
+  },
+  "mydei": {
+    "name": "Mydei",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1404.png",
+    "desc": "Imaginary Destruction Warrior. HP-scaling. 🏹🔥",
+    "build": {
+      "lightcone": "Flame of Blood, Blaze My Path",
+      "relic": "Longevous Disciple",
+      "stats": "HP% / CRIT Rate",
+      "tips": "Ubah HP jadi damage burst gila! 🔥"
+    }
+  },
+  "natasha": {
+    "name": "Natasha",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1105.png",
+    "desc": "Underworld Doctor. Physical Abundance. 💊🏙️",
+    "build": {
+      "lightcone": "Post-Op Conversation",
+      "relic": "Passerby of Wandering Cloud",
+      "stats": "HP% / SPD / Healing",
+      "tips": "Dispel debuff pake Skill-nya! 💊"
+    }
+  },
+  "pela": {
+    "name": "Pela",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1110.png",
+    "desc": "Ice Nihility DEF-shredder. ❄️🎮",
+    "build": {
+      "lightcone": "Before the Tutorial",
+      "relic": "Eagle of Twilight Line",
+      "stats": "EHR (67%+) / SPD (160+)",
+      "tips": "Sangat SP efficient. Hancurin DEF musuh! 🎮"
+    }
+  },
+  "phainon": {
+    "name": "Phainon",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1408.png",
+    "desc": "Physical Destruction Tank/DPS. ⚔️🔥",
+    "build": {
+      "lightcone": "Signature Destruction LC",
+      "relic": "Champion of Streetwise Boxing",
+      "stats": "ATK% / Physical DMG / CRIT",
+      "tips": "Mode 'Territory' bantai musuh sendirian! 🔥"
+    }
+  },
+  "qingque": {
+    "name": "Qingque",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1201.png",
+    "desc": "Diviner of Mahjong. Quantum Erudition. 💎🀄",
+    "build": {
+      "lightcone": "Night on the Milky Way",
+      "relic": "Genius of Brilliant Stars",
+      "stats": "CRIT RATE / ATK% / QUANTUM DMG",
+      "tips": "Judi Skill Point sampe dapet 4 tile sama! 🀄"
+    }
+  },
+  "rappa": {
+    "name": "Rappa",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1317.png",
+    "desc": "Dazzling Ninja. Imaginary Erudition Break. 🎭🏮",
+    "build": {
+      "lightcone": "Ninjutsu Charter",
+      "relic": "Iron Cavalry / Forge",
+      "stats": "BREAK EFFECT (200%+) / SPD",
+      "tips": "Mode ninja hancurin bar musuh pake Super Break! 💥"
+    }
+  },
+  "robin": {
+    "name": "Robin",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1309.png",
+    "desc": "Galactic Idol. Physical Harmony accelerator. 🎶🦢",
+    "build": {
+      "lightcone": "Flowing Nightglow",
+      "relic": "Musketeer / Messenger",
+      "stats": "ATK% (Min 4000) / SPD / ERR",
+      "tips": "Ultimate bikin team dapet extra turn instant! 🎶"
+    }
+  },
+  "ruanmei": {
+    "name": "Ruan Mei",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1303.png",
+    "desc": "Ice Harmony Break/RES Penetrator. ❄️🎻",
+    "build": {
+      "lightcone": "Past Self in Mirror",
+      "relic": "Watchmaker",
+      "stats": "BREAK EFFECT (180%+) / SPD",
+      "tips": "Naikin Break Efficiency satu team 50%! 🎻"
+    }
+  },
+  "saber": {
+    "name": "Saber",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1415.png",
+    "desc": "Fate Crossover. Wind Destruction EXCALIBUR. 🌪️👑",
+    "build": {
+      "lightcone": "A Thankless Coronation",
+      "relic": "Wavestrider Captain",
+      "stats": "CRIT RATE / ATK%",
+      "tips": "Excalibur damage AoE yang menghancurkan! 👑"
+    }
+  },
+  "sampo": {
+    "name": "Sampo",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1108.png",
+    "desc": "Silver-tongued rogue. Wind Nihility DoT. 🌬️🗡️",
+    "build": {
+      "lightcone": "Eyes of the Prey",
+      "relic": "Prisoner in Deep Confinement",
+      "stats": "EHR / ATK% / SPD",
+      "tips": "Bagus bareng Kafka atau Black Swan! 🗡️"
+    }
+  },
+  "seele": {
+    "name": "Seele",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1102.png",
+    "desc": "Quantum Hunt resurgence queen. 💎 butterfly",
+    "build": {
+      "lightcone": "In the Night",
+      "relic": "Genius of Brilliant Stars",
+      "stats": "CRIT RATE / SPD (160+)",
+      "tips": "Kill musuh buat dapet turn extra! 🦋"
+    }
+  },
+  "serval": {
+    "name": "Serval",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1111.png",
+    "desc": "Lightning Erudition Shock specialist. ⚡🎸",
+    "build": {
+      "lightcone": "Before Dawn",
+      "relic": "Band of Sizzling Thunder",
+      "stats": "CRIT RATE / ATK%",
+      "tips": "Hancurin Lightning shield rame-rame! ⚡"
+    }
+  },
+  "silverwolf": {
+    "name": "Silver Wolf",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1006.png",
+    "desc": "Quantum Nihility weakness implanter. 💎🎮",
+    "build": {
+      "lightcone": "Incessant Rain",
+      "relic": "Genius of Brilliant Stars",
+      "stats": "EHR (96%+) / SPD (160+)",
+      "tips": "Nambahin weakness elemen team ke musuh! 🎮"
+    }
+  },
+  "sparkle": {
+    "name": "Sparkle",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1306.png",
+    "desc": "Quantum Harmony Skill Point engine. 💎🎭",
+    "build": {
+      "lightcone": "Earthly Escapade",
+      "relic": "Messenger / Broken Keel",
+      "stats": "CRIT DMG (200%+) / SPD (160+)",
+      "tips": "Bikin team punya 7 Skill Point! 🎭"
+    }
+  },
+  "sparxie": {
+    "name": "Sparxie",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1306.png",
+    "desc": "Fire Elation Streamer. Multi-hit DPS. 🔥📢",
+    "build": {
+      "lightcone": "Signature Elation LC",
+      "relic": "The Ashblazing Grand Duke",
+      "stats": "CRIT RATE / ATK% / SPD",
+      "tips": "Engagement Farming buat buff bertubi-tubi! 📢"
+    }
+  },
+  "sunday": {
+    "name": "Sunday",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1313.png",
+    "desc": "Imaginary Harmony Summon-support. 🎻🕊️",
+    "build": {
+      "lightcone": "A Grounded Confession",
+      "relic": "Messenger / Broken Keel",
+      "stats": "SPD (160+) / ERR / HP%",
+      "tips": "Kuat bareng Jing Yuan atau Aglaea! 🎻"
+    }
+  },
+  "sushang": {
+    "name": "Sushang",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1206.png",
+    "desc": "Physical Hunt single-target burst. 🥊🐔",
+    "build": {
+      "lightcone": "Swordplay",
+      "relic": "Champion of Streetwise Boxing",
+      "stats": "ATK% / Physical DMG / SPD",
+      "tips": "Musuh Break = Sushang makin kenceng! 🐔"
+    }
+  },
+  "thedahlia": {
+    "name": "The Dahlia",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1416.png",
+    "desc": "Fire Nihility Mother of Super Break. 🔥💃",
+    "build": {
+      "lightcone": "Never Forget Her Flame",
+      "relic": "Iron Cavalry / Forge",
+      "stats": "BREAK EFFECT (250%+) / SPD",
+      "tips": "Bikin team Super Break tiap saat! 💃"
+    }
+  },
+  "tingyun": {
+    "name": "Tingyun",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1202.png",
+    "desc": "Lightning Harmony energy generator. ⚡🦊",
+    "build": {
+      "lightcone": "Dance! Dance! Dance!",
+      "relic": "Musketeer / Fleet",
+      "stats": "ATK% (Max 2600) / SPD (160+)",
+      "tips": "Ultimate kasih 50-60 Energy instan! 🦊"
+    }
+  },
+  "topaz": {
+    "name": "Topaz & Numby",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1112.png",
+    "desc": "Fire Hunt Follow-up sub-DPS. 🔥🐷",
+    "build": {
+      "lightcone": "Worrisome, Blissful",
+      "relic": "The Ashblazing Grand Duke",
+      "stats": "CRIT RATE / CRIT DMG / ATK%",
+      "tips": "Proof of Debt naikin damage follow-up! 🐷"
+    }
+  },
+  "trailblazerphys": {
+    "name": "Trailblazer (Physical)",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8001.png",
+    "desc": "Destruction early DPS. 🏏🪐",
+    "build": {
+      "lightcone": "On the Fall of an Aeon",
+      "relic": "Champion of Streetwise Boxing",
+      "stats": "ATK% / CRIT RATE",
+      "tips": "Bagus buat story awal Belobog. 🪐"
+    }
+  },
+  "trailblazerfire": {
+    "name": "Trailblazer (Fire)",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8003.png",
+    "desc": "Fire Preservation tank. 🔥🪐",
+    "build": {
+      "lightcone": "Texture of Memories",
+      "relic": "Knight of Purity Palace",
+      "stats": "DEF% / EHR / SPD",
+      "tips": "Taunt musuh buat lindungin team! 🔥"
+    }
+  },
+  "trailblazerimg": {
+    "name": "Trailblazer (Imaginary)",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8005.png",
+    "desc": "Imaginary Harmony Super Break core. 🎩🪐",
+    "build": {
+      "lightcone": "Past Self in Mirror",
+      "relic": "Watchmaker",
+      "stats": "BREAK EFFECT (200%+) / SPD",
+      "tips": "Core utama team Super Break! 🎩"
+    }
+  },
+  "trailblazerice": {
+    "name": "Trailblazer (Ice)",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8007.png",
+    "desc": "Ice Remembrance special DPS. ❄️🪐",
+    "build": {
+      "lightcone": "Signature Remembrance LC",
+      "relic": "Hunter of Glacial Forest",
+      "stats": "CRIT RATE / CRIT DMG / HP%",
+      "tips": "Summon entity Remembrance bantai musuh! ❄️"
+    }
+  },
+  "tribbie": {
+    "name": "Tribbie",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1403.png",
+    "desc": "Quantum Harmony support. RES PEN specialist. 💎🎻",
+    "build": {
+      "lightcone": "Signature Harmony LC",
+      "relic": "Poet of Mourning Collapse",
+      "stats": "HP% / CRIT RATE / SPD",
+      "tips": "Naikin damage team lewat RES Penetration! 🎻"
+    }
+  },
+  "welt": {
+    "name": "Welt",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1004.png",
+    "desc": "Imaginary Nihility slow-specialist. 🌫️🖋️",
+    "build": {
+      "lightcone": "In the Name of the World",
+      "relic": "Wastelander / Pan-Cosmic",
+      "stats": "EHR / ATK% / SPD",
+      "tips": "Imprison musuh biar ga gerak! 🌫️"
+    }
+  },
+  "xueyi": {
+    "name": "Xueyi",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1214.png",
+    "desc": "Quantum Destruction Break DPS. 💎🛡️",
+    "build": {
+      "lightcone": "On the Fall of an Aeon",
+      "relic": "Genius of Brilliant Stars",
+      "stats": "BREAK EFFECT (150%+) / CRIT",
+      "tips": "Hancurin bar musuh walaupun ga Quantum-weak! 🛡️"
+    }
+  },
+  "yanqing": {
+    "name": "Yanqing",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1209.png",
+    "desc": "Ice Hunt single-target DPS prodigy. ❄️🗡️",
+    "build": {
+      "lightcone": "In the Night",
+      "relic": "Hunter of Glacial Forest",
+      "stats": "CRIT DMG (250%+) / ATK% / SPD",
+      "tips": "Jangan sampe kepukul biar buff aktif! 🗡️"
+    }
+  },
+  "yaoguang": {
+    "name": "Yao Guang",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1406.png",
+    "desc": "Physical Elation support/sub-DPS. 🎭🗝️",
+    "build": {
+      "lightcone": "Signature Elation LC",
+      "relic": "The Ashblazing Grand Duke",
+      "stats": "SPD (160+) / ERR / ATK%",
+      "tips": "Punchline points buat aktifin Aha Instants! 🎭"
+    }
+  },
+  "yukong": {
+    "name": "Yukong",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1207.png",
+    "desc": "Imaginary Harmony heavy buffer. 🌫️🏹",
+    "build": {
+      "lightcone": "Past and Future",
+      "relic": "Wastelander / Fleet",
+      "stats": "SPD / ATK% / ERR",
+      "tips": "Timing harus pas setelah turn Yukong! 🏹"
+    }
+  },
+  "yunli": {
+    "name": "Yunli",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1221.png",
+    "desc": "Physical Destruction counter-king. 🥋🗡️",
+    "build": {
+      "lightcone": "Dance at Sunset",
+      "relic": "The Wind-Soaring Valorous",
+      "stats": "CRIT RATE / ATK% / Physical DMG",
+      "tips": "Ultimate pas musuh mau nyerang buat Perfect Counter! 🥋"
+    }
+  }
+}
