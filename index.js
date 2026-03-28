@@ -20,7 +20,7 @@ const path = require("path");
 const http = require("http");
 
 // ===== HTTP SERVER (For Health Checks) =====
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 7860;
 http.createServer((req, res) => {
     res.writeHead(200, { "Content-Type": "text/plain" });
     res.end("Bot is running!\n");

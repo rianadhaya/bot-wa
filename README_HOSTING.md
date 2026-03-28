@@ -44,6 +44,56 @@ Agar Render tidak mematikan bot kamu saat sepi, kamu harus "membangunkannya" set
 1.  Di Dashboard Render, klik bagian **Logs**.
 2.  Tunggu sampai log menunjukkan QR Code (kotak-kotak hitam putih).
 3.  Buka WhatsApp di HP kamu -> Perangkat Tertaut -> Tautkan Perangkat.
-4.  Scan QR Code yang ada di log Render tersebut.
+4.  Scan QR Code yang ada di log Render tersebut.---
 
-Selamat mencoba kak! Kalau ada kendala, tanya saya ya 😆💖
+## 🤗 3. Hosting di Hugging Face (Gratis & No Card) - REKOMENDASI CLOUD
+
+Hugging Face Spaces bisa menjalankan Docker secara gratis tanpa kartu kredit.
+
+1.  Buat akun di [huggingface.co](https://huggingface.co).
+2.  Klik **New** -> **Space**.
+3.  Beri nama Space kamu (misal: `zayla-bot`).
+4.  **PENTING**: Pilih SDK **Docker**.
+5.  Pilih **Blank** template.
+6.  Klik **Create Space**.
+7.  Setelah itu, upload semua file bot kamu ke sana (bisa via web upload atau git).
+8.  Hugging Face akan otomatis membaca `Dockerfile` yang sudah saya siapkan dan menjalankan botnya.
+9.  **Link Bot**: Ada di bagian atas (contoh: `https://user-zayla-bot.hf.space`). Gunakan link ini di **UptimeRobot** agar bot tidak mati.
+10. **Scan QR**: Cek bagian **Logs** di Hugging Face untuk menscan QR Code-nya.
+
+---
+
+## 📱 Cara Alternatif: Hosting di HP (Termux) - 100% Gratis & No Card
+
+Jika kamu tidak punya kartu kredit untuk Render/Railway, ini adalah cara paling populer:
+
+1.  **Install Termux**: Download dari [F-Droid](https://f-droid.org/en/packages/com.termux/) (Jangan dari Play Store, versinya sudah usang).
+2.  **Buka Termux**, lalu ketik perintah ini satu per satu:
+    ```bash
+    pkg update && pkg upgrade
+    pkg install nodejs ffmpeg python git
+    pip install yt-dlp
+    ```
+3.  **Ambil Kode kamu dari GitHub**:
+    ```bash
+    git clone link-github-kamu
+    cd nama-repo-kamu
+    ```
+4.  **Install & Jalankan**:
+    ```bash
+    npm install
+    node index.js
+    ```
+5.  **Scan QR**: Minta teman untuk memfoto QR yang muncul di HP kamu, lalu kamu scan foto tersebut dengan WhatsApp kamu.
+
+---
+
+## 💤 Cara Agar Bot Termux Tidak Mati
+
+Agar Termux tetap jalan di background meskipun layar HP mati:
+
+1. Tarik bar notifikasi HP ke bawah.
+2. Pada notifikasi Termux, klik **"Acquire Wake Lock"**.
+3. Selesai! Bot kamu akan jalan terus selama HP nyala dan ada internet.
+
+Selamat mencoba kak! Kalau ada kendala di Termux, tanya saya ya 😆💖

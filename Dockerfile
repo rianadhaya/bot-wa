@@ -15,15 +15,23 @@ RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o 
 # Create app directory
 WORKDIR /app
 
+# Create a non-root user for Hugging Face compatibility
+RUN useradd -m -u 1000 user
+RUN chown -R user:user /app
+
+# Switch to non-root user
+USER user
+
 # Copy package files and install dependencies
-COPY package*.json ./
+COPY --chown=user:user package*.json ./
 RUN npm install
 
 # Copy app source
-COPY . .
+COPY --chown=user:user . .
 
-# Expose the port (Render/Koyeb/Railway use process.env.PORT)
-EXPOSE 3000
+# Expose the port (Hugging Face uses 7860 by default)
+EXPOSE 7860
+ENV PORT=7860
 
 # Start the bot
 CMD ["npm", "start"]
