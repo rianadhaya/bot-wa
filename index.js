@@ -7,23 +7,13 @@ const {
 
 const P = require("pino");
 const qrcode = require("qrcode-terminal");
-// const sharp = require("sharp"); // Sharp dihapus agar mudah install di Termux
-
 const ffmpeg = require("fluent-ffmpeg");
-try {
-    const ffmpegPath = require("@ffmpeg-installer/ffmpeg").path;
-    if (fs.existsSync(ffmpegPath)) {
-        ffmpeg.setFfmpegPath(ffmpegPath);
-    } else {
-        console.log("ffmpeg-installer path not found, using system ffmpeg.");
-    }
-} catch (e) {
-    console.log("ffmpeg-installer not found or failed, using system ffmpeg.");
-}
-
 const fs = require("fs");
 const { exec } = require("child_process");
 const path = require("path");
+
+// Deteksi ffmpeg sistem (Penting untuk Termux)
+// fluent-ffmpeg akan otomatis mencari 'ffmpeg' di PATH jika tidak diset secara manual
 
 const http = require("http");
 
