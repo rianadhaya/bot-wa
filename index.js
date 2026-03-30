@@ -7,7 +7,7 @@ const {
 
 const P = require("pino");
 const qrcode = require("qrcode-terminal");
-const sharp = require("sharp");
+// const sharp = require("sharp"); // Sharp dihapus agar mudah install di Termux
 
 const ffmpeg = require("fluent-ffmpeg");
 try {
@@ -272,6 +272,7 @@ async function startBot() {
         }
 
         // ===== STIKER =====
+        // ===== STIKER (REPLACE SHARP WITH FFMPEG) =====
         if (m.message.imageMessage && cmd === "!stiker") {
             const stream = await downloadContentFromMessage(
                 m.message.imageMessage,
@@ -283,10 +284,25 @@ async function startBot() {
                 buffer = Buffer.concat([buffer, chunk]);
             }
 
-            const webp = await sharp(buffer)
-                .resize(512, 512)
-                .webp()
-                .toBuffer();
+            const tempIn = `stiker_in_${Date.now()}.jpg`;
+            const tempOut = `stiker_out_${Date.now()}.webp`;
+            fs.writeFileSync(tempIn, buffer);
+
+            await new Promise((res, rej) => {
+                ffmpeg(tempIn)
+                    .outputOptions([
+                        "-vcodec libwebp",
+                        "-vf scale='if(gt(a,1),512,-1)':'if(gt(a,1),-1,512)',pad=512:512:(512-iw)/2:(512-ih)/2:color=white@0,fps=15",
+                        "-lossless 1"
+                    ])
+                    .save(tempOut)
+                    .on("end", res)
+                    .on("error", rej);
+            });
+
+            const webp = fs.readFileSync(tempOut);
+            fs.unlinkSync(tempIn);
+            fs.unlinkSync(tempOut);
 
             return await sock.sendMessage(from, {
                 sticker: webp
