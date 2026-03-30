@@ -10,8 +10,16 @@ const qrcode = require("qrcode-terminal");
 const sharp = require("sharp");
 
 const ffmpeg = require("fluent-ffmpeg");
-const ffmpegPath = require("@ffmpeg-installer/ffmpeg").path;
-ffmpeg.setFfmpegPath(ffmpegPath);
+try {
+    const ffmpegPath = require("@ffmpeg-installer/ffmpeg").path;
+    if (fs.existsSync(ffmpegPath)) {
+        ffmpeg.setFfmpegPath(ffmpegPath);
+    } else {
+        console.log("ffmpeg-installer path not found, using system ffmpeg.");
+    }
+} catch (e) {
+    console.log("ffmpeg-installer not found or failed, using system ffmpeg.");
+}
 
 const fs = require("fs");
 const { exec } = require("child_process");
@@ -34,62 +42,6 @@ try {
     hsrData = JSON.parse(fs.readFileSync("./hsr_data.json", "utf-8"));
 } catch {}
 
-// ===== MEMORY SYSTEM =====
-let memory = {};
-try {
-    memory = JSON.parse(fs.readFileSync("./memory.json", "utf-8"));
-} catch {}
-
-function saveMemory() {
-    fs.writeFileSync("./memory.json", JSON.stringify(memory, null, 2));
-}
-
-// ===== AI BRAIN =====
-function aiReply(text, userId) {
-    text = text.toLowerCase();
-
-    if (!memory[userId]) {
-        memory[userId] = {
-            name: null,
-            lastChat: "",
-            mood: "neutral",
-            chatCount: 0
-        };
-    }
-
-    const user = memory[userId];
-    user.chatCount++;
-
-    // simpan nama
-    if (text.startsWith("namaku ")) {
-        const name = text.replace("namaku ", "").trim();
-        user.name = name;
-        saveMemory();
-        return `Oke, aku ingat ya~ sekarang aku panggil kamu kak ${name} 💖`;
-    }
-
-    // respon pakai nama
-    const nama = user.name ? user.name : "kamu";
-
-    if (text.includes("halo")) return `Hai kak ${nama} 😆✨`;
-    if (text.includes("apa kabar")) return `Aku baik~ kamu gimana kak ${nama}?`;
-    if (text.includes("lagi apa")) return `Aku lagi nemenin kak ${nama} 😳💖`;
-
-    // simple learning mood
-    if (text.includes("capek")) user.mood = "tired";
-    if (text.includes("senang")) user.mood = "happy";
-
-    if (user.mood === "tired") {
-        return `Kamu capek ya kak ${nama}? istirahat dulu yaa 🥺`;
-    }
-
-    if (user.mood === "happy") {
-        return `Wah lagi seneng ya kak ${nama}! aku ikut seneng 😆💖`;
-    }
-
-    // default
-    return `Hmm kak ${nama}, ceritain lagi dong 😆`;
-}
 
 // ===== BOT =====
 async function startBot() {
@@ -133,9 +85,10 @@ async function startBot() {
             return await sock.sendMessage(from, {
                 text:
                     "Haiii~ aku Zayla 💖\n\n" +
+                    "📥 !save <url> (TikTok, YT, IG)\n" +
                     "✨ !hsr\n" +
                     "🖼️ !stiker\n" +
-                    "🎥 !gif\n" +
+                    "🎥 !gif\n\n" +
                     "Jadi mau yang mana??"
             });
         }
@@ -151,7 +104,7 @@ async function startBot() {
             
             // --- KHUSUS TIKTOK (PAKAI API TIKWM) ---
             if (url.includes("tiktok.com")) {
-                const tikwmCommand = `curl.exe -X POST https://www.tikwm.com/api/ -d "url=${url}"`;
+                const tikwmCommand = `curl -X POST https://www.tikwm.com/api/ -d "url=${url}"`;
                 
                 exec(tikwmCommand, async (error, stdout) => {
                     try {
@@ -159,7 +112,7 @@ async function startBot() {
                         if (res.code === 0 && res.data && res.data.play) {
                             const videoUrl = res.data.play;
                             const filePath = path.join(__dirname, `${tempPrefix}.mp4`);
-                            const downloadCmd = `curl.exe -L -o "${filePath}" "${videoUrl}"`;
+                            const downloadCmd = `curl -L -o "${filePath}" "${videoUrl}"`;
                             
                             exec(downloadCmd, async (dlError) => {
                                 if (dlError) throw dlError;
@@ -215,7 +168,7 @@ async function startBot() {
                         if (igId) {
                             const fallbackUrl = `https://www.instagram.com/p/${igId}/media/?size=l`;
                             const fallbackPath = path.join(__dirname, `${tempPrefix}.jpg`);
-                            const curlCmd = `curl.exe -L -s -o "${fallbackPath}" "${fallbackUrl}"`;
+                            const curlCmd = `curl -L -s -o "${fallbackPath}" "${fallbackUrl}"`;
                             
                             exec(curlCmd, async (curlErr) => {
                                 if (!curlErr && fs.existsSync(fallbackPath) && fs.statSync(fallbackPath).size > 1000) {
@@ -375,12 +328,7 @@ async function startBot() {
             });
         }
 
-        // ===== AI CHAT =====
-        if (!text.startsWith("!")) {
-            const reply = aiReply(text, sender);
-            saveMemory();
-            await sock.sendMessage(from, { text: reply });
-        }
+        // Fitur AI chat telah dihapus
     });
 }
 

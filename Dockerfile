@@ -15,19 +15,18 @@ RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o 
 # Create app directory
 WORKDIR /app
 
-# Create a non-root user for Hugging Face compatibility
-RUN useradd -m -u 1000 user
-RUN chown -R user:user /app
+# Ensure correct permissions for the node user (UID 1000 is already node)
+RUN chown -R node:node /app
 
-# Switch to non-root user
-USER user
+# Switch to the existing node user
+USER node
 
 # Copy package files and install dependencies
-COPY --chown=user:user package*.json ./
+COPY --chown=node:node package*.json ./
 RUN npm install
 
 # Copy app source
-COPY --chown=user:user . .
+COPY --chown=node:node . .
 
 # Expose the port (Hugging Face uses 7860 by default)
 EXPOSE 7860
